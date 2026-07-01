@@ -93,3 +93,5 @@ function verificarForca(s){
 }
 
 gerarSenha();
+
+
