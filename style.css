@@ -1,1 +1,84 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
 
+body{
+    background:#0f172a;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    width:420px;
+    background:#1e293b;
+    padding:30px;
+    border-radius:15px;
+    color:white;
+    box-shadow:0 0 20px rgba(0,0,0,.4);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.senha-box{
+    display:flex;
+    gap:10px;
+}
+
+input[type=text]{
+    flex:1;
+    padding:12px;
+    font-size:18px;
+    border:none;
+    border-radius:8px;
+}
+
+button{
+    cursor:pointer;
+}
+
+#copiar{
+    background:#10b981;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:8px;
+}
+
+.opcoes{
+    margin-top:20px;
+}
+
+.opcoes label{
+    display:block;
+    margin:10px 0;
+}
+
+input[type=range]{
+    width:100%;
+}
+
+.gerar{
+    width:100%;
+    margin-top:20px;
+    padding:14px;
+    font-size:18px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:8px;
+}
+
+.forca{
+    margin-top:20px;
+    text-align:center;
+    font-size:20px;
+    font-weight:bold;
+}
