@@ -1,65 +1,39 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerador de Senhas Seguras</title>
-
+    <title>Gerador de senha</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-
-<div class="container">
-
-    <h1>🔐 Gerador de Senhas</h1>
-
-    <div class="senha-box">
-        <input type="text" id="senha" readonly>
-        <button id="copiar">Copiar</button>
-    </div>
-
-    <div class="opcoes">
-
-        <label>
-            Tamanho:
-            <span id="valor">12</span>
-        </label>
-
-        <input type="range" id="tamanho" min="4" max="30" value="12">
-
-        <label>
-            <input type="checkbox" id="maiusculas" checked>
-            Letras Maiúsculas
-        </label>
-
-        <label>
-            <input type="checkbox" id="minusculas" checked>
-            Letras Minúsculas
-        </label>
-
-        <label>
-            <input type="checkbox" id="numeros" checked>
-            Números
-        </label>
-
-        <label>
-            <input type="checkbox" id="simbolos" checked>
-            Símbolos
-        </label>
-
-    </div>
-
-    <button id="gerar" class="gerar">
-        Gerar Senha
-    </button>
-
-    <div id="forca" class="forca">
-        Força: -
-    </div>
-
-</div>
-
-<script src="main.js"></script>
-
+    <section class="conteudo">
+        <div class="conteudo-titulo">
+            <img src="unlock.svg" alt="cadeado fechado">
+            <h2 class="titulo-principal">Gerador de senhas</h2>
+            <h3 class="titulo-secundario">Gere instantaneamente uma senha aleatória e segura</h3>
+        </div>
+        <div class="conteudo-senha">
+            <label for="senha">Senha</label>
+            <input name="senha" type="text" id="campo-senha">
+        </div>
+        <div class="parametro">
+            <h3 class="parametro-titulo">Personalize sua senha</h3>
+            <div class="parametro-coluna__senha">
+                <div class="parametro-senha">
+                    <h4 class="parametro-senha__titulo">Número de caracteres</h4>
+                </div>                
+                <div class="parametro-senha">
+                    <h4 class="parametro-senha__titulo">Características da senha</h4>
+                </div>
+                <div class="parametro-senha">
+                    <h4 class="parametro-senha__titulo">Força da senha</h4>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
